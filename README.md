@@ -20,8 +20,8 @@ Steps:
 
     CREATE TABLE task_list (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    description VARCHAR(255) NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    description LongText NOT NULL,
+    date   DATETIME NOT NULL
     );
 4. Configure the Database Connection
     Create a configuration file named .env in the root directory of the project and add the following content, adjusting the values as needed:
